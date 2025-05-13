@@ -1,0 +1,142 @@
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+  padding: 16px;
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.promo-banner {
+  background: #ffe0b3;
+  padding: 12px;
+  margin: 16px 0;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.categories {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.category {
+  background: #eee;
+  padding: 10px 14px;
+  border-radius: 20px;
+  white-space: nowrap;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.category:hover {
+  background: #ddd;
+}
+
+.product-card {
+  display: flex;
+  background: #f1f1f1;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  flex-direction: row;
+}
+
+.product-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.product-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(187, 255, 0, 0.2),
+    0 6px 20px 0 rgba(255, 208, 0, 0.19);
+}
+.product-card:active {
+  box-shadow: 0 4px 8px 0 yellow, 0 6px 20px 0 greenyellow;
+}
+
+.product-info {
+  padding: 10px;
+  flex: 1;
+}
+
+.product-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.product-price {
+  color: #333;
+  font-weight: bold;
+  margin-top: 6px;
+}
+footer {
+  text-align: center;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .product-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .header {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 700px;
+  }
+}
+.logo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+footer {
+  justify-content: center;
+}
