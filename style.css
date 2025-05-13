@@ -70,6 +70,7 @@ body {
   overflow: hidden;
   margin-bottom: 16px;
   flex-direction: row;
+  box-shadow:2px 2px 3px black
 }
 
 .product-card img {
