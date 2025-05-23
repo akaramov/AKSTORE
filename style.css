@@ -23,7 +23,7 @@ body {
 }
 
 .promo-banner {
-  background:  #ffe0b3;
+  background: #ffe0b3;
   padding: 12px;
   margin: 16px 0;
   border-radius: 8px;
@@ -51,7 +51,7 @@ body {
 }
 
 .category {
-  background: #eee;
+  background: #eeeeee;
   padding: 10px 14px;
   border-radius: 20px;
   white-space: nowrap;
@@ -60,9 +60,12 @@ body {
   transition: background 0.3s;
 }
 .category:hover {
-  background: #ddd;
+  background: gray;
 }
-
+.category:active {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.308);
+  background-color: aqua;
+}
 .product-card {
   display: flex;
   background: #f1f1f1;
@@ -70,7 +73,7 @@ body {
   overflow: hidden;
   margin-bottom: 16px;
   flex-direction: row;
-  box-shadow:2px 2px 3px black
+  box-shadow: 2px 2px 3px black;
 }
 
 .product-card img {
