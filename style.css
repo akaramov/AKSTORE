@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 body {
   font-family: "Inter", sans-serif;
   margin: 0;
@@ -32,6 +33,7 @@ body {
   column-gap: 10px;
   align-items: center;
   justify-content: center;
+  font-family: Anton;
 }
 
 .search-box input {
